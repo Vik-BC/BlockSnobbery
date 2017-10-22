@@ -1,0 +1,29 @@
+{
+  "name": "blocksnobbery",
+  "version": "0.2.0",
+  "description": "🤘 BlockSnobbery.js GOLOS/STEEM blockchain redis-streamer. No block will be missed!",
+  "main": "snob.js",
+  "scripts": {
+    "test": "node snob.js now"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikxx/BlockSnobbery.git"
+  },
+  "keywords": [
+    "golos",
+    "steem",
+    "blockchain",
+    "blocklistener"
+  ],
+  "author": "golos.io/@vik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vikxx/BlockSnobbery/issues"
+  },
+  "homepage": "https://github.com/vikxx/BlockSnobbery#readme",
+  "dependencies": {
+    "redis": "^2.8.0",
+    "ws": "^3.2.0"
+  }
+}
