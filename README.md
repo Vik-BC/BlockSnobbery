@@ -20,14 +20,28 @@ You should already have installed nodejs.org & redis.io
 * `npm install redis`
 * `node snob.js now`
 
-Realtime block listener
+***
+
+Start from the specified block:
+> node snob.js 1234565
+
+Start with the newest block:
+> node snob.js now                                          
+
+Start with the Last remembered block:                          
+> node snob.js       
+
+***
+
+Realtime block listener: `node snob.js now`
+
 
 |Processed block num  | Age last ops |Current on Steem  | State  | Ops count  | Ops lenght  |   
 |---|---|---|---|---|---|
 
 ![Capture.JPG](https://steemitimages.com/DQmee4VDMWHAqi3dKACkWGHMq63XP3ba6NAbj6DVJ9QV8Yt/Capture.JPG)
 
-Processing Block History
+Processing Block History after pause: `node snob.js`
 
 |Processed block | Age block |Current on Steem|State|Remain|Ops count| Ops lenght  |   
 |---|---|---|---|---|---|---|
