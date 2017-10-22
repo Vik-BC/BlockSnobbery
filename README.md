@@ -21,12 +21,16 @@ You should already have installed nodejs.org & redis.io
 * `node snob.js now`
 
 Realtime block listener
+
 |Processed block num  | Age last ops |Current on Steem  | State  | Ops count  | Ops lenght  |   
 |---|---|---|---|---|---|
+
 ![Capture.JPG](https://steemitimages.com/DQmee4VDMWHAqi3dKACkWGHMq63XP3ba6NAbj6DVJ9QV8Yt/Capture.JPG)
 
 Processing Block History
+
 |Processed block | Age block |Current on Steem|State|Remain|Ops count| Ops lenght  |   
 |---|---|---|---|---|---|---|
+
 ![Capture2.JPG](https://steemitimages.com/DQmbsDcqjFZQX9AQUj9ob8qJCtYDoSRNSAT7iZk4H2HvELP/Capture2.JPG)
 
