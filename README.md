@@ -2,7 +2,7 @@
 ## 🤘 BlockSnobbery: GOLOS/STEEM blockchain redis-streamer. 
 
 
-* **One blocklistener for 10000 bots!** Connect to the blockstreamer with any number of scripts without creating undesirable load
+* **One blocklistener for 10000 bots!** Connect to the blockstreamer with any number of scripts without creating undesirable load. Use the power and bandwidth of a redis pub/sub
 * **No block will be missed** Checkpoint in case of a pause
 * **No intervals hell** there are no intervals such as silly 3000ms
 * **Clean & Native Websockets** No libraries required such as golos-js || steemjs
