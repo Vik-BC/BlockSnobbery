@@ -48,3 +48,42 @@ Processing Block History after pause: `node snob.js`
 
 ![Capture2.JPG](https://steemitimages.com/DQmbsDcqjFZQX9AQUj9ob8qJCtYDoSRNSAT7iZk4H2HvELP/Capture2.JPG)
 
+## Connecting to a channel with operations
+
+Use a redis SUB to get the blocks operations https://redis.io/topics/pubsub
+
+For example:
+
+```
+const FilterOps = (op) => {
+const [type, o] = op
+
+if(type === "limit_order_create") // Do some func with: Order on market
+ if(type === "comment"&&!o.parent_author)// Do some func with: post    
+ if(type === "comment"&&o.parent_author)// Do some func with: comment   
+ if(type === "vote" && o.weight > 0) // Do some func with: vote  
+ if(type === "vote" && o.weight < 0) // Do some func with:  flag 
+ if(type === "vote" && o.weight === 0) // Do some func with: downvote
+ if(type === "custom_json") // Do some func with: follow, reblog etc. 
+ if(type === "transfer") // Do some func with: transfer funds  
+ if(type === "account_create")  // Do some func with:  account create 
+ if(type === "account_update")  // Do some func with: profile update
+ if(type === "account_witness_vote") // Do some func with: witness voting
+ if(type === "feed_publish")  // Do some func with:  price feed
+ if(type === "curation_reward")  // Do some func with:   curation reward
+ if(type === "author_reward")   // Do some func with:  author reward
+ //... etc
+
+
+}
+
+
+sub.on("message", (channel, message) => {
+let ops = JSON.parse(message)
+return ops.forEach(FilterOps)
+
+})
+
+sub.subscribe(SubRedisChannelName); 
+
+```
