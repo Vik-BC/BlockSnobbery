@@ -23,13 +23,13 @@ You should already have installed nodejs.org & redis.io
 ***
 
 Start from the specified block:
-> node snob.js 1234565
+node snob.js 1234565
 
 Start with the newest block:
-> node snob.js now                                          
+node snob.js now                                          
 
 Start with the Last remembered block:                          
-> node snob.js       
+node snob.js       
 
 ***
 
