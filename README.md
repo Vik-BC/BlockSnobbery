@@ -49,6 +49,7 @@ Processing Block History after pause: `node snob.js`
 ![Capture2.JPG](https://steemitimages.com/DQmbsDcqjFZQX9AQUj9ob8qJCtYDoSRNSAT7iZk4H2HvELP/Capture2.JPG)
 
 ### Processing more than 1000 missed blocks less than a second
+Quick return to real time and synchronization after the downtime of your applications
 
 ![snob.gif](https://steemitimages.com/DQmRr5F4Hzxyyd6UmT2248FLCniTFQiAD3CQg1YMjU6wjXS/snob.gif)
 
