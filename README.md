@@ -21,6 +21,21 @@ You should already have installed nodejs.org & redis.io
 * `node snob.js now`
 
 ***
+### ⚙️ Configure
+
+Edit variables if required in snob.js
+```
+const WS = 'ws://localhost:9090'
+const CHANNEL = "blockschannel"
+const redKey = "lastblocknumber"
+```
+**WS** If you have a steem node installed, use address ws://localhost:9090 
+You can also use public nodes: wss://steemd.steemit.com for STEEM or wss://ws.golos.io for GOLOS
+
+**CHANNEL** - custom name of a redis channel 
+**redKey** - custom redis key for a checkpoint block
+
+### 🚀 Run
 
 Start from the specified block:
 `node snob.js 1234565`
