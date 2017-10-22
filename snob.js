@@ -2,22 +2,7 @@ const WS = 'ws://localhost:9090'
 const CHANNEL = "blockschannel"
 const redKey = "lastblocknumber"
 
-
-console.log(`
-🤘 BlockSnobbery.js GOLOS/STEEM blockchain redis-streamer. 
-No block will be missed!
-	
-	  🔘 Start from the specified block:
-	   > node snob.js 1234565
-	 
-	  🔘 Start with the newest block:
-	   > node snob.js now                                          
-	                                                                                               
-	  🔘 Start with the Last remembered block:                          
-	   > node snob.js                                                  
-			
-©️ golos.io/@vik 
-`)
+console.log(`🤘 BlockSnobbery started`)
 
 const WebSocket = require('ws');
 const ws = new WebSocket(WS);
