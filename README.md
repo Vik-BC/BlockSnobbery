@@ -30,11 +30,11 @@ const CHANNEL = "blockschannel"
 const redKey = "lastblocknumber"
 ```
 **WS** 
-If you have a steem node installed, use address ws://localhost:9090 
+If you have a steem node installed, use address `ws://localhost:9090` 
 
-You can also use public nodes: wss://steemd.steemit.com for STEEM 
+You can also use public nodes: `wss://steemd.steemit.com` for STEEM 
 
-or wss://ws.golos.io for GOLOS
+or `wss://ws.golos.io` for GOLOS
 
 **CHANNEL** - custom name of a redis channel 
 
