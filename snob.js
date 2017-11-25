@@ -109,3 +109,10 @@ else if (data.id === 3){
 })
 
 });
+
+// for  pm2:
+/* ws.on('close', function close() {
+	console.warn('Reload');
+	process.exit(0);
+  });
+ */
